@@ -7,10 +7,10 @@ export default function App() {
   const [date, setDate] = useState(new Date());
   let message =
     count < 0
-      ? `${count} days before today was`
+      ? `${Math.abs(count} days before today was`
       : count === 0
       ? "Today is "
-      : `${count} days after today will be`;
+      : `${Math.abs(count} days after today will be`;
 
   return (
     <div className="container">
