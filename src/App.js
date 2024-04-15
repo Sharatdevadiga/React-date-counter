@@ -55,8 +55,7 @@ function Step({ increment, setIncrement }) {
 function Count({ increment, count, setCount, date, setDate }) {
   function handlePlus() {
     setCount((c) => {
-      if (c === 0) return 1;
-      else return c + increment;
+       return c + increment;
     });
     setDateAfterXDays(count + increment);
     console.log(date.toDateString());
